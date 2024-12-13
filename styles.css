@@ -5,6 +5,7 @@ body {
     padding: 0;
     color: #333;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -15,6 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header .logo {
@@ -28,6 +30,7 @@ header .menu {
     gap: 1rem;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 header .menu li a {
@@ -51,12 +54,12 @@ header .menu li a:hover {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -98,7 +101,8 @@ header .menu li a:hover {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
 }
 
 .service-item i {
@@ -150,7 +154,10 @@ footer {
     background: #222;
     color: #fff;
     text-align: center;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
 footer .social-links a {
@@ -165,19 +172,34 @@ footer .social-links a:hover {
     color: #007BFF;
 }
 
-@media (max-width: 1220px) {
-    .lenguajes .content-lenguajes {
-        max-width: 900px;
-    }
-}
+/* Lenguajes Section */
 .lenguajes .content-lenguajes {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    display: flex
-;
+    display: flex;
     justify-content: space-between;
     padding: 60px 20px;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .service-item {
+        width: 100%;
+    }
 }
