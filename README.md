@@ -6,3 +6,4 @@ Guía del Valor: 0.100 = 100B, 1 = 1M, 1000 = 1T 1500 = 1T 500M
 
 Celdas modificables = Cantidad Obtenida,	Cantidad Max, Bonus Obtenido,	Valor Sello Único
 
+https://github.com/pruebasweb123/pruebasweb123.github.io
